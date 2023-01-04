@@ -2,17 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:spotify/constant/theme.dart';
-import 'package:spotify/ui/register/register.dart';
 import 'package:spotify/widget/button.dart';
 
-class SignIn extends StatefulWidget {
-  SignIn({Key? key}) : super(key: key);
+class Register extends StatefulWidget {
+  Register({Key? key}) : super(key: key);
 
   @override
-  State<SignIn> createState() => _SignInState();
+  State<Register> createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,9 +84,22 @@ class _SignInState extends State<SignIn> {
             ),
             TextFormField(
               decoration: InputDecoration(
-                hintText: "Enter Username Or Email",
-                hintStyle:
-                    GoogleFonts.quicksand(fontSize: 13, color: Colors.black),
+                hintText: "Full Name",
+                hintStyle: GoogleFonts.quicksand(fontSize: 13),
+                enabledBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(30)),
+                    borderSide: BorderSide(color: Color(0xffD1D5DB))),
+                focusedBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xffD1D5DB))),
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+             TextFormField(
+              decoration: InputDecoration(
+                hintText: "Email",
+                hintStyle: GoogleFonts.quicksand(fontSize: 13),
                 enabledBorder: const OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30)),
                     borderSide: BorderSide(color: Color(0xffD1D5DB))),
@@ -101,8 +113,7 @@ class _SignInState extends State<SignIn> {
             TextFormField(
               decoration: InputDecoration(
                 hintText: "Password",
-                hintStyle:
-                    GoogleFonts.quicksand(fontSize: 13, color: Colors.black),
+                hintStyle: GoogleFonts.quicksand(fontSize: 13),
                 enabledBorder: const OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(30)),
                     borderSide: BorderSide(color: Color(0xffD1D5DB))),
@@ -113,15 +124,7 @@ class _SignInState extends State<SignIn> {
             SizedBox(
               height: 20,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  "Recover Password",
-                  textAlign: TextAlign.start,
-                ),
-              ],
-            ),
+           
             SizedBox(
               height: 25,
             ),
@@ -151,35 +154,31 @@ class _SignInState extends State<SignIn> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 40),
-              child:
-                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:[
                 Image.asset('assets/images/Group 26.png'),
-                SizedBox(
-                  width: 50,
-                ),
+                SizedBox(width: 50,),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 5),
-                  child: Image.asset('assets/images/Vector (5).png',
-                      height: 32, width: 32),
+                  child: Image.asset('assets/images/Vector (5).png' , height: 32, width:32),
                 )
-              ]),
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Register()));
-              },
-              child: RichText(
-                text: TextSpan(
-                    text: 'Not a Member ',
-                    style: GoogleFonts.quicksand(color: Colors.black),
-                    children: [
-                      TextSpan(
-                        text: "Register Now",
-                        style: GoogleFonts.quicksand(color: Colors.blue),
-                      ),
-                    ]),
+                ]
+
               ),
+            ),
+
+
+            RichText(
+              text: TextSpan(
+                  text: 'Not a Member ',
+                  style: GoogleFonts.quicksand(color: Colors.black),
+                  children: [
+                    TextSpan(
+                      text: "Register Now",
+                      style: GoogleFonts.quicksand(color: Colors.blue),
+                    ),
+                  ]),
             )
           ],
         ),
