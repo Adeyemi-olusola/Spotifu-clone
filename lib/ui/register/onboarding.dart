@@ -44,10 +44,12 @@ class _OnboardingState extends State<Onboarding> {
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Image.asset(
                         "assets/images/15mag-billie-03-master675-v3 1.png"),
+                    Expanded(child: Image.asset("assets/images/Union1.png")),
                   ],
                 )
               ],
@@ -60,19 +62,19 @@ class _OnboardingState extends State<Onboarding> {
               children: [
                 ClipOval(
                   child: Material(
-                    color: Color.fromARGB(18, 0, 0, 0), // Button color
+                    color:const  Color.fromARGB(18, 0, 0, 0), // Button color
                     child: InkWell(
                       splashColor: ColorConstant().primaryColor, // Splash color
                       onTap: () {},
-                      child: SizedBox(
+                      child:const  SizedBox(
                           width: 30,
                           height: 30,
                           child: Icon(Icons.arrow_back_ios,
-                              size: 12, color: Colors.black)),
+                              size: 11, color: Colors.black)),
                     ),
                   ),
                 ),
-                SizedBox(
+               const  SizedBox(
                   height: 80,
                 ),
                 Row(
@@ -80,7 +82,7 @@ class _OnboardingState extends State<Onboarding> {
                   children: [
                     Icon(MdiIcons.spotify,
                         color: ColorConstant().primaryColor, size: 60),
-                    SizedBox(
+                   const  SizedBox(
                       width: 5,
                     ),
                     Text(
@@ -93,22 +95,27 @@ class _OnboardingState extends State<Onboarding> {
                     )
                   ],
                 ),
-                SizedBox(height: 45,),
+               const  SizedBox(
+                  height: 45,
+                ),
                 Text('Enjoy Listening To Music',
                     style: GoogleFonts.quicksand(
                       color: Colors.black,
                       fontWeight: FontWeight.w800,
                       fontSize: 26,
                     )),
-                SizedBox(height: 15),
-                Text('vvfvfvfvvgfvgvbbgbg btbtbt tbtbtb tbtbt btbtb tbtbtb tbtbtb btb',
+                const SizedBox(height: 15),
+                Text(
+                    'vvfvfvfvvgfvgvbbgbg btbtbt tbtbtb tbtbt btbtb tbtbtb tbtbtb btb',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.quicksand(
-                      color: Color(0xff797979),
+                      color:const Color(0xff797979),
                       fontWeight: FontWeight.w500,
                       fontSize: 15,
                     )),
-                    SizedBox(height: 20,),
+               const  SizedBox(
+                  height: 20,
+                ),
                 Row(
                   children: [
                     Expanded(
@@ -116,7 +123,7 @@ class _OnboardingState extends State<Onboarding> {
                         text: "Register",
                       ),
                     ),
-                    SizedBox(width: 25),
+                 const    SizedBox(width: 25),
                     Expanded(
                       child: WhiteButton(
                         text: "Sign In",
