@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify/ui/loadingPage.dart';
+import 'package:spotify/ui/register/signin.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   
         primarySwatch: Colors.blue,
       ),
-      home:const  LoadingPage(),
+      home: Onboarding (),
     );
   }
 }
