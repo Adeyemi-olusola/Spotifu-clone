@@ -60,7 +60,7 @@ class _RegisterState extends State<Register> {
               height: 40,
             ),
             Text(
-              'Sign In',
+              'Register',
               style: GoogleFonts.quicksand(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
