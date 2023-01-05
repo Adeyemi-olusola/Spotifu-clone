@@ -66,7 +66,7 @@ class _RegisterState extends State<Register> {
                   fontWeight: FontWeight.bold,
                   fontSize: 26),
             ),
-            SizedBox(
+           const SizedBox(
               height: 30,
             ),
             RichText(
@@ -79,7 +79,7 @@ class _RegisterState extends State<Register> {
                       style: GoogleFonts.quicksand(
                           color: ColorConstant().primaryColor))
                 ])),
-            SizedBox(
+          const  SizedBox(
               height: 30,
             ),
             TextFormField(
@@ -93,7 +93,7 @@ class _RegisterState extends State<Register> {
                     borderSide: BorderSide(color: Color(0xffD1D5DB))),
               ),
             ),
-            SizedBox(
+          const   SizedBox(
               height: 15,
             ),
              TextFormField(
@@ -107,7 +107,7 @@ class _RegisterState extends State<Register> {
                     borderSide: BorderSide(color: Color(0xffD1D5DB))),
               ),
             ),
-            SizedBox(
+          const  SizedBox(
               height: 15,
             ),
             TextFormField(
@@ -121,20 +121,20 @@ class _RegisterState extends State<Register> {
                     borderSide: BorderSide(color: Color(0xffD1D5DB))),
               ),
             ),
-            SizedBox(
+       const     SizedBox(
               height: 20,
             ),
            
-            SizedBox(
+        const    SizedBox(
               height: 25,
             ),
             Button(text: 'Sign In'),
-            SizedBox(
+         const   SizedBox(
               height: 20,
             ),
             Row(
               children: [
-                Expanded(
+          const      Expanded(
                     child: Divider(
                   color: Color(0xffB0B0B0),
                   height: 2,
@@ -144,7 +144,7 @@ class _RegisterState extends State<Register> {
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Text('Or'),
                 ),
-                Expanded(
+            const    Expanded(
                     child: Divider(
                   color: Color(0xffB0B0B0),
                   height: 2,
@@ -158,7 +158,7 @@ class _RegisterState extends State<Register> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:[
                 Image.asset('assets/images/Group 26.png'),
-                SizedBox(width: 50,),
+             const   SizedBox(width: 50,),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 5),
                   child: Image.asset('assets/images/Vector (5).png' , height: 32, width:32),

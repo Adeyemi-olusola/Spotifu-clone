@@ -57,7 +57,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
                 textAlign: TextAlign.center,
                 
                  style: GoogleFonts.quicksand(
-                  color: Color(0xff797979),
+                  color: const Color(0xff797979),
                   fontSize: 15,
                   fontWeight: FontWeight.w400
 

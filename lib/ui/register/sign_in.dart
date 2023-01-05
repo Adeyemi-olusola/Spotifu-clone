@@ -67,7 +67,7 @@ class _SignInState extends State<SignIn> {
                   fontWeight: FontWeight.bold,
                   fontSize: 26),
             ),
-            SizedBox(
+        const    SizedBox(
               height: 30,
             ),
             RichText(
@@ -80,7 +80,7 @@ class _SignInState extends State<SignIn> {
                       style: GoogleFonts.quicksand(
                           color: ColorConstant().primaryColor))
                 ])),
-            SizedBox(
+         const   SizedBox(
               height: 30,
             ),
             TextFormField(
@@ -95,7 +95,7 @@ class _SignInState extends State<SignIn> {
                     borderSide: BorderSide(color: Color(0xffD1D5DB))),
               ),
             ),
-            SizedBox(
+         const   SizedBox(
               height: 15,
             ),
             TextFormField(
@@ -116,7 +116,7 @@ class _SignInState extends State<SignIn> {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
+            const    Text(
                   "Recover Password",
                   textAlign: TextAlign.start,
                 ),
@@ -131,7 +131,7 @@ class _SignInState extends State<SignIn> {
             ),
             Row(
               children: [
-                Expanded(
+             const   Expanded(
                     child: Divider(
                   color: Color(0xffB0B0B0),
                   height: 2,
@@ -141,7 +141,7 @@ class _SignInState extends State<SignIn> {
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Text('Or'),
                 ),
-                Expanded(
+              const  Expanded(
                     child: Divider(
                   color: Color(0xffB0B0B0),
                   height: 2,
@@ -154,7 +154,7 @@ class _SignInState extends State<SignIn> {
               child:
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Image.asset('assets/images/Group 26.png'),
-                SizedBox(
+               const SizedBox(
                   width: 50,
                 ),
                 Padding(
