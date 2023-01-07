@@ -30,7 +30,7 @@ class _HomepageState extends State<Homepage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(
+                  const     Icon(
                         MdiIcons.magnify,
                         color: Colors.grey,
                       ),
@@ -52,13 +52,13 @@ class _HomepageState extends State<Homepage> {
                           )
                         ],
                       ),
-                      Icon(
+                   const    Icon(
                         MdiIcons.dotsVertical,
                         color: Colors.grey,
                       )
                     ],
                   ),
-                  SizedBox(
+                 const  SizedBox(
                     height: 30,
                   ),
                   Container(
@@ -80,7 +80,7 @@ class _HomepageState extends State<Homepage> {
                                 fontWeight: FontWeight.w400,
                                 fontSize: 10),
                           ),
-                          SizedBox(
+                       const    SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -90,7 +90,7 @@ class _HomepageState extends State<Homepage> {
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16),
                           ),
-                          SizedBox(
+                      const     SizedBox(
                             height: 5,
                           ),
                           Text(
@@ -100,7 +100,7 @@ class _HomepageState extends State<Homepage> {
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16),
                           ),
-                          SizedBox(
+                        const   SizedBox(
                             height: 7,
                           ),
                           Text(
