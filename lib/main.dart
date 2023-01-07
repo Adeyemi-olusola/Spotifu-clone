@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify/ui/homepage.dart';
 import 'package:spotify/ui/loadingPage.dart';
 import 'package:spotify/ui/register/onboarding.dart';
 import 'package:spotify/ui/register/sign_in.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   
         primarySwatch: Colors.blue,
       ),
-      home: SignIn(),
+      home: Homepage(),
     );
   }
 }
